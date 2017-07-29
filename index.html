@@ -86,6 +86,13 @@
     const seconds = now.getSeconds();
     //console.log(seconds);
 
+
+    if(seconds == 0){
+      secondHand.style.transition = "all 0s";
+    }else {
+      secondHand.style.transition = "all 0.05s";
+    }
+
     const secondsDegrees = ((seconds/60) * 360) + 90;
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
