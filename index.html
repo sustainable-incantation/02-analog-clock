@@ -86,7 +86,7 @@
     const seconds = now.getSeconds();
     //console.log(seconds);
 
-
+    /* 60s problem (reverse to 90deg) solved */
     if(seconds == 0){
       secondHand.style.transition = "all 0s";
     }else {
@@ -101,6 +101,7 @@
     const minutes = now.getMinutes();
     //console.log(minutes);
     
+    /* 60min problem (reverse to 90deg) solved */
     if(minutes == 0){
       minuteHand.style.transition = "all 0s";
     }else {
@@ -115,6 +116,7 @@
     const hours = now.getHours() % 12;
     //console.log(hours);
 
+    /* 12hour problem (reverse to 90deg) solved */
     if(hours == 0){
       hourHand.style.transition = "all 0s";
     }else {
